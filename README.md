@@ -1,0 +1,2 @@
+# Glided Rose Kata Refactor
+ 
