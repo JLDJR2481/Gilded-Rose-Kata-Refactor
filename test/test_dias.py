@@ -1,4 +1,9 @@
-from src import *
+from src.items.agedBrie import *
+from src.items.backstagePasses import *
+from src.items.conjuredItems import *
+from src.items.sulfuras import *
+from src.items.normalItem import *
+
 
 #Item(name, sellIn, quality)
 
