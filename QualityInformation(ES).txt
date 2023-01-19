@@ -1,0 +1,21 @@
+Información sobre las calidades de cada ítem
+
+Tengamos en consideración 2 variables muy importantes:
+
+    - quality: La calidad del item correspondiente. Nunca puede ser menor que 0, ni mayor de 50
+    - sell-in: La cantidad de días que se da al ítem para venderse
+
+Items disponibles:
+    - normalItem: Este item degrada en su quality cada día que pase en -1. Si el sell-in es igual a 0, se degrada la quality a -2.
+
+    - agedBrie: Este item aumenta su quality cada día que pase en +1. Si el sell-in es menor o igual que 0, su quality incrementará de +2.
+
+    - Sulfuras: Este es un item legendario, el cual no tiene sell-in, ni aumenta su quality. Es decir, se bloqueará su quality en 80.
+
+    - backstagePasses: Este ítem aumenta su quality cuanto mas cerca está del sell-in:
+        -  Normalmente, se aumenta su quality +1
+        - Si quedan 10 o menos dias de sell-in, su quality aumenta en +2
+        - Si quedan 5 o menos días de sell-in, su quality aumenta en +3
+        - Si su sell-in es igual a 0, su quality se cae a pique, haciendo que su quality sea 0
+
+    - conjured: Los conjured items se degradan el doble de rápido que un normal item. Es decir, por cada día se degrada de 2 en 2 excepto si caduca el sell-in, donde se irá degradando de 4 en 4
